@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="#">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- Luxon cdn install  -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" integrity="sha256-CnZmNCHHUMy22/PJclCIISZ5Ib4MnUu+7ee5YNxtsZQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Awesome books</title>
+</head>
+
+<body>
+  <nav>
+    <div class="heading">
+      <p class="margin-0 head-line">Awesome Books</p>
+    </div>
+    <ul>
+      <li><a id="list_link" href="#">List</a></li>
+      <li class="line"></li>
+      <li><a id="add_link" href="#">Add new</a></li>
+      <li class="line"></li>
+      <li><a id="contact_link" href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="date"><p id="date"></p></div>
+  <main id="main" class="main-container">
+    <div id="list">
+      <h1 class="margin-bottom-3">All awesome books</h1>
+      <table id="displayBooks" class="mb-4">
+      </table>
+      <hr class="small-line">
+    </div>
+    <div id="form">
+      <h2 class="margin-bottom-3">Add a new book </h2>
+      <form class="bookForm">
+        <input type = "text" placeholder = "Title" id="title"><br><br>
+        <input type = "text" placeholder = "Author" id="author"><br><br>
+        <input type = "button" id="add" value="Add">
+      </form>
+    </div>
+    <div id="contact">
+      <h2 class="margin-bottom-3">Contact Information</h2>
+      <div class="text">
+        <p class="margin-0">Do you have any questions or you just want to say "Hello"?</p> 
+      <p> You can reach out to us!</p>
+      </div>      
+      <ul>
+        <li>Our email: email@gmail.com</li>
+        <li>Our phone number: 0123456789</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+      <p class="copyright">Copyright: &copy; 2021 made by Alek and Emma</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
