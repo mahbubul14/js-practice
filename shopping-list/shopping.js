@@ -4,7 +4,8 @@ const list = document.getElementById('list');
 
 btn.addEventListener('click', function(){
     const newList = document.createElement('li');
-    const del = document.createElement('button')
+    let del = document.createElement('button');
+    del.setAttribute ('id', "removeBtn");
     del.textContent = 'Remove';
 
     newList.innerHTML = input.value;
