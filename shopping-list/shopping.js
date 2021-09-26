@@ -3,19 +3,21 @@ const btn = document.getElementById('btn');
 const list = document.getElementById('list');
 
 btn.addEventListener('click', function(){
-    const newList = document.createElement('li');
-    let del = document.createElement('button');
-    del.setAttribute ('id', "removeBtn");
-    del.textContent = 'Remove';
-
-    newList.innerHTML = input.value;
+    const item = document.createElement('li');
+    // let del = document.createElement('button');
+    // del.setAttribute ('id', "removeBtn");
+    // del.id = 'removeBtn';
+    // del.textContent = 'Remove';
+    const value = input.value;
+    item.innerHTML = value;
     input.value = '';
-    list.appendChild(newList);
-    newList.appendChild(del);
 
-    // del.style.background ='pink'
+    // list.appendChild(item);
+    // item.appendChild(del);
 
-del.addEventListener('click', function(){
-    list.removeChild(newList);
+// del.addEventListener('click', function(){
+//     list.removeChild(item);
+// });
 });
-});
+
+
