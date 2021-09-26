@@ -2,22 +2,20 @@ const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 const list = document.getElementById('list');
 
-btn.addEventListener('click', function(){
-    const item = document.createElement('li');
-    // let del = document.createElement('button');
-    // del.setAttribute ('id', "removeBtn");
-    // del.id = 'removeBtn';
-    // del.textContent = 'Remove';
-    const value = input.value;
-    item.innerHTML = value;
-    input.value = '';
-
-    // list.appendChild(item);
-    // item.appendChild(del);
-
-// del.addEventListener('click', function(){
-//     list.removeChild(item);
-// });
+input.addEventListener('input', (letter) => {
+    list.textContent = letter.target.value
 });
+
+const saveStorage = () => {
+    localStorage.setItem('info', list.textContent);
+}
+
+btn.addEventListener('click', saveStorage);
+
+
+    // const item = document.createElement('p');
+    // item.innerHTML = input.value;
+    // input.value = '';
+    // list.appendChild(item);
 
 
