@@ -1,21 +1,16 @@
-const input = document.getElementById('input');
-const btn = document.getElementById('btn');
-const list = document.getElementById('list');
 
-input.addEventListener('input', (letter) => {
-    list.textContent = letter.target.value
-});
+const input = document.getElementById('input')
+const btn = document.getElementById('btn')
+const list = document.getElementById('list')
 
 const saveStorage = () => {
-    localStorage.setItem('info', list.textContent);
+    localStorage.setItem('info', input.value)
 }
 
-btn.addEventListener('click', saveStorage);
+const stored = localStorage.getItem('info')
 
+btn.addEventListener ('click', saveStorage);
 
-    // const item = document.createElement('p');
-    // item.innerHTML = input.value;
-    // input.value = '';
-    // list.appendChild(item);
-
-
+if(stored) {
+    list.textContent = stored;
+}
