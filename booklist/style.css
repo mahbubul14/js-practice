@@ -20,3 +20,41 @@ font-size: x-large;
   gap: 40px;
   color: orange;
   }
+
+  form {
+    width: 30%;
+    margin: 50px 20px 30% 40%;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+  }
+
+  form > input {
+    background-color: cadetblue;
+    border: none;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-size:large;
+    opacity: 1; /* Firefox */
+  }
+
+  .addBtn {
+    width: 60%;
+    height: 35px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addBtn:hover {
+    background-color: goldenrod;
+  }
