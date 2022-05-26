@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.nav-bar {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 50px;
+padding-right: 70px;
+background-color:cadetblue;
+font-weight: 600;
+font-size: x-large;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  color: orange;
+  }
