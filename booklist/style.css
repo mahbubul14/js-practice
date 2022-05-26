@@ -2,24 +2,28 @@ body {
   margin: 0;
 }
 
-.nav-bar {
+.nav-bar, a {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-padding-left: 50px;
-padding-right: 70px;
+padding-left: 30px;
+padding-right: 50px;
 background-color:cadetblue;
 font-weight: 600;
 font-size: x-large;
+color: black;
 }
 
-.nav-item {
+.nav-item, a {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 40px;
-  color: orange;
   }
+
+  .nav-item li a {
+    color: orange;
+    }
 
   form {
     width: 30%;
@@ -38,11 +42,12 @@ font-size: x-large;
     height: 30px;
     width: 100%;
     padding-left: 10px;
+    font-size: large;
 
   }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
+    color: whitesmoke;
     font-size:large;
     opacity: 1; /* Firefox */
   }
