@@ -7,7 +7,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 padding-left: 30px;
-padding-right: 50px;
+padding-right: 10px;
 background-color:cadetblue;
 font-weight: 600;
 font-size: x-large;
@@ -27,12 +27,11 @@ color: black;
 
   form {
     width: 30%;
-    margin: 50px 20px 30% 40%;
+    margin: 50px 20px 10% 10%;
     background-color:aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 80px 90px 120px 90px;
     border-style: solid;
     border-color: chocolate;
@@ -54,8 +53,8 @@ color: black;
     opacity: 1; /* Firefox */
   }
 
-  .addBtn {
-    width: 60%;
+  #submit {
+    width: 70%;
     height: 35px;
     background-color: orange;
     border: none;
@@ -64,4 +63,15 @@ color: black;
 
   .addBtn:hover {
     background-color: goldenrod;
+  }
+
+  .list {
+    margin-left: 10%;
+    width: 60%;
+    background-color: red;
+    border-spacing: 20px;
+  }
+
+  table, th, td {
+    border: 1px solid;
   }
