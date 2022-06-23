@@ -9,3 +9,9 @@
 header {
   justify-content:space-between;
 }
+
+nav ul li{
+  margin-right: 10px;
+}
+
+
