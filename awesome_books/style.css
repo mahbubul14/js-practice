@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+}
+
+.list_style_none {
+  list-style-type: none;
+}
+
+header {
+  justify-content:space-between;
+}
