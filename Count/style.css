@@ -1,0 +1,9 @@
+body {
+    color: black;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    padding: 5px;
+}

@@ -1,0 +1,1 @@
+document.getElementById("count_number").innerText = 65
