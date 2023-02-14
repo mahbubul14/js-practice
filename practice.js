@@ -15,5 +15,29 @@
 //         console.log("nothing match")
 // }
 
-var myDate = new Date();
-console.log(myDate.toTimeString());
+// var myDate = new Date();
+// console.log(myDate.toTimeString());
+
+//Function
+// function sum(num1, num2){
+//     var total = num1 + num2;
+//     return total;
+// }
+// var a = sum(10, 15);
+// console.log(a);
+
+//Objects,constructor
+// var MyInfo = {name: 'maha', village: "Singapur"}
+// console.log(MyInfo.name);
+// console.log(MyInfo["village"]);
+
+// function MyInfo(name,village){
+// this.name = name;
+// this.village = village;
+// }
+
+// var NewObj = new MyInfo("Maha", "Singapur")
+// console.log(NewObj);
+// console.log(NewObj.village);
+
+//break;
