@@ -41,3 +41,11 @@
 // console.log(NewObj.village);
 
 //break;
+
+//Dom 
+    // > Dom Into
+    // > Selecting Dom
+    // > Collection and nodelists
+    // > Events
+    // > Event building
+    // > Session & localStorage
