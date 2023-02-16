@@ -42,8 +42,8 @@
 
 //break;
 
-//Dom 
-    // > Dom Into
+//Dom __ Document Object Model
+    // > Dom Intro
     // > Selecting Dom
     // > Collection and nodelists
     // > Events
