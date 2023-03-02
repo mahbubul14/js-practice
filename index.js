@@ -10,8 +10,7 @@ text.style.color = "red";
 button.addEventListener('click',function(){
    const li = document.createElement("li");
    ul.appendChild(li);
-   const textValue = textInput.value;
-   li.append(textValue);
+   li.append(textInput.value);
 
-console.log(textInput);
+console.log(li);
 })
