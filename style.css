@@ -1,0 +1,7 @@
+.nav-item{
+    text-decoration: none;
+    color: red;
+    list-style: none;
+    display: flex;
+    
+}
