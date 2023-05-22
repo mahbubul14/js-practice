@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h4>Counter App</h4>
+        <h2 class="logo">ToDoList</h2>
         <nav>
-            <ul class="nav-item">
-                <li>Home</li>
-                <li>Quote</li>
-                <li>About</li>
-            </ul>
+          <ul class="nav-items">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Quote</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
         </nav>
     </header>
-    <section>
-      <div class= "app_count">
-        <h1> Counter</h1>
-        <h4 class="display">0</h4>
-        <button type="submit" class = "inc">Increment</button>
-        <Button type="submit" class = "res">Reset</Button>
-        <button type="submit" class = "dec">Decrement</button>
-      </div>
+    <section class="submit-section">
+      <h1 class="main-header">ToDoList App</h1>
+      <input type="text" name="task-name" id="task-name" required>
+      <input type="submit" value="Submit" class="submit-btn">
     </section>
+    <section>
 
-    <script src="./index.js"></script>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
