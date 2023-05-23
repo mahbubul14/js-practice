@@ -1,19 +1,20 @@
-const task_name =  document.getElementById("task-name");
+const task_input =  document.getElementById("task_input");
 const submit = document.querySelector(".submit-btn")
-
-
-
-const ul = document.createElement("ul");
-const li =  document.createElement("li");
+const lists = document.getElementById("lists")
 submit.style.color = "red"
 
-submit.addEventListener('click', function() {
-    alert("hello");
-})
+submit.addEventListener('click',() => {
+    const task_text = task_input.value;
+    if (task_text != '') {
+        const  listItem = document.createElement('li')
+        listItem.innerHTML = `
+        <input type = "checkbox">
+        <label>${task_text}</label>
+        `;
+        lists.appendChild(listItem);
 
-
-
-// const el = document.getElementById("outside");
-// el.addEventListener(
-//   "click",
-//   () => {
+        task_input.value ='';
+    }
+    lists.style.listStyle = `none`;
+    console.log(lists)
+});
