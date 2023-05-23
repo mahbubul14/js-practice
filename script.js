@@ -11,12 +11,9 @@ const addTask = () => {
         listItem.innerHTML = `
         <input type = "checkbox">
         <label>${task_text}</label>
+        <button class="remove-btn">Remove</button>
         `;
         lists.appendChild(listItem);
-    
-        const removebtn =  document.createElement('button')
-        listItem.appendChild(removebtn);
-        removebtn.style.padding = "10px 10px 5px 10px";
 
         task_input.value ='';
         lists.style.listStyle = `none`;
@@ -25,12 +22,26 @@ const addTask = () => {
     }
 }
 
+const removeTask = (event) => {
+    const listItem = event.target.parentNode;
+    lists.removeChild(listItem);
+  };
+// const editTask = () {
+//     const 
+// }
+
 task_input.addEventListener('keypress',(event) => {
     if (event.key === 'Enter') {
         addTask();
     }
 });
 
-submit.addEventListener('click',(event) => {
+submit.addEventListener('click',() => {
         addTask();
 });
+
+lists.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-btn")) {
+      removeTask(event);
+    }
+  });
