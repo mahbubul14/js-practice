@@ -34,9 +34,14 @@ btn.addEventListener('click', (e) => {
     newRow.appendChild(newYear);
 
     bookList.appendChild(newRow);
+
+    localStorage.setItem("title", JSON.stringify(title.value));
+    localStorage.setItem("author", JSON.stringify(author.value));
+    localStorage.setItem("year", JSON.stringify(year.value));
+
     title.value = '';
     author.value = '';
     year.value = '';
 
-   }
+    }
 });
