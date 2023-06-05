@@ -26,10 +26,19 @@ const removeTask = (event) => {
     const listItem = event.target.parentNode;
     lists.removeChild(listItem);
   };
-// const editTask = () {
-//     const 
-// }
-
+  const editTask = (event) => {
+    const label = event.target.parentNode.querySelector('label');
+    const input = document.createElement('input');
+    input.value = label.innerText;
+    label.replaceWith(input);
+  
+    input.addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+        label.innerText = input.value;
+        input.replaceWith(label);
+      }
+    });
+  };
 task_input.addEventListener('keypress',(event) => {
     if (event.key === 'Enter') {
         addTask();
@@ -42,6 +51,14 @@ submit.addEventListener('click',() => {
 
 lists.addEventListener("click", (event) => {
     if (event.target.classList.contains("remove-btn")) {
+      removeTask(event);
+    }
+  });
+
+  lists.addEventListener("click", (event) => {
+    if (event.target.tagName === 'LABEL') {
+      editTask(event);
+    } else if (event.target.classList.contains("remove-btn")) {
       removeTask(event);
     }
   });
