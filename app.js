@@ -34,5 +34,9 @@ btn.addEventListener('click', (e) => {
     newRow.appendChild(newYear);
 
     bookList.appendChild(newRow);
+    title.value = '';
+    author.value = '';
+    year.value = '';
+
    }
 });
