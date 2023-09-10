@@ -284,4 +284,51 @@
 //     xhr.send();
 //     // console.log(xhr)
 // }
-// data from external server................
+// ..............Arrow function................
+
+// function hello() {
+//     console.log("hello world");
+// }
+// hello();
+
+// let hello = (name, age) => {
+//     console.log(`Welcome ${name} + "Your age is: ${age}"`);
+// }
+// hello("maha", 28);
+
+// numbers = [1,2,3,4,5,6];
+
+// // let printAll = (item) =>{
+// //     console.log(item);
+// // }
+// numbers.forEach((item)=> console.log(item));
+
+// let squareAll=(item)=>{return item*item}
+// let squareNum = numbers.map(squareAll);
+// console.log(squareNum);
+// .........template literals..........
+// console.log(`first line
+// second line`);
+// ........promises.......
+
+//promises
+
+//successful >resolve
+
+//failed > reject
+
+let prom = new Promise((resolve, reject) => {
+    let a = 1+1
+
+    if (a==3) {
+        resolve('sucess');
+    }else {
+        reject('failed');
+    }
+})
+// .then .catch
+prom.then((message) => {
+    console.log('I am from then '+ message);
+}).catch ((message)=>{
+    console.log("I am from catch " + message)
+});

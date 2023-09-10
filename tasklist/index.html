@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h4>Task List</h4>
+        <form id = 'task_form'>
+            <input type="text" id="new_task" placeholder = "New Task">
+            <input type="submit" value ="Add Task">
+        </form>
+        <hr>
+        <h4>Tasks</h4>
+        <input type="text" id="task_filter" placeholder="Filter Task">
+        <ul id="tasks">
+
+        </ul>
+        <button id="clear_task_button">Clear Tasks</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
