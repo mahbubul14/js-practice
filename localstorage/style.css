@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+}
+nav>ul>li {
+    margin-right: 10px;
+}
+
+.box {
+    text-align: center;
+    background-color: skyblue;
+    width: 300px;
+    padding: 20px;
+    border: 3px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn {
+    padding: 5px 80px 5px 80px;
+    background-color: black;
+    color:whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input {
+    padding: 10px 20px 10px 20px;
+}
+
+div>p {
+    align-items: start;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 30px;
+
+}

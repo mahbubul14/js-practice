@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <title>Todo List</title>
+    <title>Book List</title>
 </head>
 <body>
-    <h1>Maha's Todo List</h1>
-    <input type="text" placeholder="New task" id="newTask">
-    <input type="submit" value="Add task" id="addBtn">
+    <h1>Add Book</h1>
+    <form id="book-form">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input type="text" id ="author">
+        </div>
+        <div>
+            <label for="isbn">ISBN</label>
+            <input type="text" id="isbn">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
 
-    <ul id="tasks"></ul>
+        </tbody>
+    </table>
     <script src="./app.js"></script>
 </body>
 </html>
